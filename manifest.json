@@ -15,13 +15,13 @@
     "persistent": true
   },
   "icons": {
-    "16": "icon_on.png",
-    "32": "icon_on.png",
-    "48": "icon_on.png",
-    "128": "icon_on.png"
+    "16": "image/icon_on.png",
+    "32": "image/icon_on.png",
+    "48": "image/icon_on.png",
+    "128": "image/icon_on.png"
   },
   "browser_action": {
-    "default_icon": "icon_off.png",
+    "default_icon": "image/icon_off.png",
     "default_title": "50X auto refresh"
   },
   "manifest_version": 2

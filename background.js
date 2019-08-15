@@ -35,7 +35,7 @@ function checkAndReload(details) {
 
 // Set the right icon in the given tab id, depending on that tab's active state.
 function setIcon(tabId, isActive) {
-  const path = isActive ? "icon_on.png" : "icon_off.png";
+  const path = isActive ? "image/icon_on.png" : "image/icon_off.png";
   chrome.browserAction.setIcon({
     path, tabId
   });
@@ -46,7 +46,7 @@ function updateIcon(details) {
   if (details.frameId != 0) {
     return; // only update the icon for main page, not iframe/frame
   }
-  const path = activeTabs.includes(details.tabId) ? "icon_on.png" : "icon_off.png";
+  const path = activeTabs.includes(details.tabId) ? "image/icon_on.png" : "image/icon_off.png";
   chrome.browserAction.setIcon({
     path: path,
     tabId: details.tabId
